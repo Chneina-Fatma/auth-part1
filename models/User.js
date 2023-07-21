@@ -17,6 +17,7 @@ const UserSchema=new schema({
         type:String,
         required:true
     },
+    category:{type:String, default:"user"}
 })
 
 module.exports=mongoose.model("user",UserSchema);
